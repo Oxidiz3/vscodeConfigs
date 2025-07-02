@@ -1,0 +1,429 @@
+{
+    "editor.renderWhitespace": "none",
+    "explorer.confirmDragAndDrop": false,
+    "editor.minimap.enabled": false,
+    "editor.suggestSelection": "first",
+    "files.associations": {
+        "*.xml": "xml"
+    },
+    "git.enableSmartCommit": true,
+    "editor.fontFamily": "consolas",
+    "editor.fontLigatures": true,
+    "vim.incsearch": true,
+    "vim.hlsearch": true,
+    "vim.leader": "\\",
+    "vim.handleKeys": {
+        "<C-a>": true,
+        "<C-f>": false,
+        "gi": false
+    },
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                ">"
+            ],
+            "commands": [
+                "editor.action.indentLines"
+            ]
+        },
+        {
+            "before": [
+                "<"
+            ],
+            "commands": [
+                "editor.action.outdentLines"
+            ]
+        },
+        {
+            "before": [
+                "<space>"
+            ],
+            "commands": [
+                "whichkey.show"
+            ]
+        }
+    ],
+    "vim.statusBarColors.normal": [
+        "#FBE569",
+        "#000"
+    ],
+    "vim.statusBarColors.insert": [
+        "#BF616A",
+        "#000"
+    ],
+    "vim.statusBarColors.visual": [
+        "#B48EAD",
+        "#000"
+    ],
+    "vim.statusBarColors.visualline": [
+        "#B48EAD",
+        "#000"
+    ],
+    "vim.statusBarColors.visualblock": [
+        "#A3BE8C",
+        "#000"
+    ],
+    "vim.statusBarColors.replace": "#D08770",
+    "vim.statusBarColors.commandlineinprogress": "#007ACC",
+    "vim.statusBarColors.searchinprogressmode": "#007ACC",
+    "vim.statusBarColors.easymotionmode": "#007ACC",
+    "vim.statusBarColors.easymotioninputmode": "#007ACC",
+    "vim.statusBarColors.surroundinputmode": "#007ACC",
+    "vim.commandLineModeKeyBindings": [],
+    "editor.stickyTabStops": true,
+    "python.languageServer": "Jedi",
+    "explorer.confirmDelete": false,
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+    "vim.cursorStylePerMode.insert": "line",
+    "vim.cursorStylePerMode.normal": "block",
+    "vim.cursorStylePerMode.replace": "block-outline",
+    "vim.cursorStylePerMode.visual": "block-outline",
+    "vim.cursorStylePerMode.visualblock": "block-outline",
+    "vim.cursorStylePerMode.visualline": "block-outline",
+    "vim.foldfix": true,
+    "vim.highlightedyank.enable": true,
+    "vim.useSystemClipboard": true,
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    "security.workspace.trust.untrustedFiles": "open",
+    "csharp.semanticHighlighting.enabled": true,
+    "workbench.preferredDarkColorTheme": "Monokai Dimmed",
+    "git.confirmSync": false,
+    "vim.replaceWithRegister": true,
+    "editor.codeLensFontFamily": "consolas",
+    "scm.inputFontFamily": "editor",
+    "debug.console.fontFamily": "Consolas",
+    "git.autofetch": true,
+    "terminal.integrated.fontFamily": "monospace",
+    "debug.javascript.autoAttachFilter": "smart",
+    "terminal.integrated.defaultProfile.windows": "PowerShell",
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "prettier.semi": false,
+    "prettier.useTabs": true,
+    "editor.formatOnSaveMode": "modificationsIfAvailable",
+    "files.autoSave": "onFocusChange",
+    "omnisharp.useModernNet": false,
+    "editor.guides.bracketPairs": true,
+    "[dart][python]": {
+        "editor.wordBasedSuggestions": "off"
+    },
+    "terminal.integrated.enableMultiLinePasteWarning": "never",
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "python.defaultInterpreterPath": "C:\\Users\\mecha\\AppData\\Local\\Microsoft\\WindowsApps\\python3.12.exe",
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
+    },
+    "github.copilot.advanced": {
+        "authProvider": "github"
+    },
+    "workbench.colorTheme": "Gruvbox Dark Hard",
+    "workbench.sideBar.location": "right",
+    "workbench.activityBar.location": "top",
+    "security.workspace.trust.enabled": false,
+    "dotnet.codeLens.enableReferencesCodeLens": false,
+    "editor.cursorSurroundingLines": 20,
+    "editor.lineNumbers": "relative",
+    "metaGo.decoration.additionalSingleCharCodeCharacters": "z",
+    "metaGo.decoration.characters": "k, j, d, f, l, s, a, h, g, i, o, n, u, r, v, c, w, e, x, m, b, p, q, t, y",
+    "workbench.layoutControl.enabled": false,
+    "window.commandCenter": false,
+    "window.customTitleBarVisibility": "windowed",
+    "zenMode.hideLineNumbers": false,
+    "whichkey.bindings": [
+        {
+            "key": "e",
+            "name": "Editor",
+            "type": "bindings",
+            "bindings": [
+                {
+                    "key": "f",
+                    "name": "File Explorer",
+                    "args": {
+                        "commands": [
+                            "workbench.files.action.focusFilesExplorer"
+                        ]
+                    },
+                    "command": "runCommands",
+                },
+                {
+                    "key": "g",
+                    "name": "git tab",
+                    "args": {
+                        "commands": [
+                            "workbench.view.scm"
+                        ]
+                    },
+                    "command": "runCommands",
+                },
+                {
+                    "key": "c",
+                    "name": "copilot",
+                    "args": {
+                        "commands": [
+                            "workbench.action.chat.open"
+                        ]
+                    },
+                    "command": "runCommands",
+                },
+                {
+                    "key": "d",
+                    "name": "debug",
+                    "args": {
+                        "commands": [
+                            "workbench.view.debug"
+                        ]
+                    },
+                    "command": "runCommands",
+                },
+                {
+                    "key": "t",
+                    "name": "Terminal",
+                    "args": {
+                        "commands": [
+                            "workbench.action.terminal.toggleTerminal"
+                        ]
+                    },
+                    "command": "runCommands",
+                },
+                {
+                    "key": "p",
+                    "name": "Command Palette",
+                    "args": {
+                        "commands": [
+                            "workbench.action.showCommands"
+                        ]
+                    },
+                    "command": "runCommands",
+                },
+                {
+                    "key": "s",
+                    "name": "Settings",
+                    "args": {
+                        "commands": [
+                            "workbench.action.openSettings"
+                        ]
+                    },
+                    "command": "runCommands",
+                },
+                {
+                    "key": "l",
+                    "name": "Extensions",
+                    "args": {
+                        "commands": [
+                            "workbench.view.extensions"
+                        ]
+                    },
+                    "command": "runCommands",
+                },
+            ],
+        },
+        {
+            "key": "w",
+            "name": "window",
+            "type": "bindings",
+            "bindings": [
+                {
+                    "key": "h",
+                    "name": "Split Horizontally",
+                    "command": "workbench.action.splitEditor",
+                },
+                {
+                    "key": "v",
+                    "name": "Split Vertically",
+                    "command": "workbench.action.splitEditorDown",
+                },
+                {
+                    "key": "z",
+                    "name": "Zen Mode",
+                    "command": "workbench.action.toggleZenMode",
+                },
+                {
+                    "key": "p",
+                    "name": "toggle pin",
+                    "command": "workbench.action.pinEditor",
+                },
+                {
+                    "key": "u",
+                    "name": "UnPin Editor",
+                    "command": "workbench.action.unpinEditor",
+                },
+                {
+                    "key": "c",
+                    "name": "Close Window",
+                    "command": "workbench.action.closeActiveEditor",
+                },
+                {
+                    "key": ",",
+                    "name": "Show All Editors",
+                    "command": "workbench.action.showAllEditors",
+                },
+            ],
+        },
+        {
+            "key": "g",
+            "name": "Goto",
+            "type": "bindings",
+            "bindings": [
+                {
+                    "key": "p",
+                    "name": "Peek",
+                    "command": "editor.action.peekDefinition",
+                },
+                {
+                    "key": "m",
+                    "name": "Symbol",
+                    "command": "workbench.action.gotoSymbol",
+                },
+                {
+                    "name": "Definition",
+                    "key": "d",
+                    "command": "editor.action.revealDefinition",
+                },
+                {
+                    "key": "r",
+                    "name": "References",
+                    "command": "editor.action.goToReferences",
+                },
+                {
+                    "key": "i",
+                    "name": "Implementation",
+                    "command": "editor.action.goToImplementation",
+                },
+                {
+                    "key": "e",
+                    "name": "Error",
+                    "command": "editor.action.marker.next",
+                },
+            ],
+        },
+        {
+            "key": "d",
+            "name": "Debug",
+            "type": "bindings",
+            "bindings": [
+                {
+                    "key": "b",
+                    "name": "Toggle Breakpoint",
+                    "command": "editor.debug.action.toggleBreakpoint",
+                },
+                {
+                    "key": "s",
+                    "name": "Start Debugging",
+                    "command": "workbench.action.debug.start",
+                },
+                {
+                    "key": "q",
+                    "name": "Quit Debugging",
+                    "command": "workbench.action.debug.stop",
+                },
+            ],
+        },
+        {
+            "key": "o",
+            "name": "Open",
+            "type": "bindings",
+            "bindings": [
+                {
+                    "key": "s",
+                    "name": "Solution",
+                    "command": "csdevkit.openSolution",
+                },
+                {
+                    "key": "p",
+                    "name": "Project folder",
+                    "command": "workbench.action.files.openFolder",
+                },
+                {
+                    "key": "f",
+                    "name": "File",
+                    "command": "workbench.action.files.openFile",
+                },
+            ],
+        },
+        {
+            "key": "s",
+            "name": "Split",
+            "type": "bindings",
+            "bindings": [
+                {
+                    "key": "h",
+                    "name": "Horizontally",
+                    "command": "workbench.action.splitEditorRight",
+                },
+                {
+                    "key": "v",
+                    "name": "Vertically",
+                    "command": "workbench.action.splitEditorDown",
+                },
+            ],
+        },
+        {
+            "key": "t",
+            "name": "Tabs",
+            "type": "bindings",
+            "bindings": [
+                {
+                    "key": "c",
+                    "name": "Close",
+                    "command": "workbench.action.closeActiveEditor",
+                },
+                {
+                    "key": "p",
+                    "name": "Pin",
+                    "command": "workbench.action.pinEditor",
+                },
+                {
+                    "key": "u",
+                    "name": "UnPin",
+                    "command": "workbench.action.unpinEditor",
+                },
+            ],
+        },
+    ],
+    // Use this to work with vim extensions https://github.com/VSCodeVim/Vim?tab=readme-ov-file#vim-easymotion
+    "vim.normalModeKeyBindingsNonRecursive": [
+        //EasyMotion Stuff
+        {
+            "before": [
+                ";"
+            ],
+            "after": [
+                "\\",
+                "\\",
+                "s"
+            ]
+        },
+        {
+            "before": [
+                "<space>"
+            ],
+            "commands": [
+                "whichkey.show"
+            ]
+        }
+    ],
+    "vim.showMarksInGutter": true,
+    "workbench.iconTheme": "material-icon-theme",
+    "vim.easymotion": true,
+    "csharp.debug.logging.diagnosticsLog.startDebuggingTracing": true,
+    "csharp.debug.logging.moduleLoad": false,
+    "csharp.debug.logging.elapsedTiming": true,
+    "csharp.debug.debugConsoleVerbosity": "verbose",
+    "diffEditor.ignoreTrimWhitespace": true,
+    "diffEditor.hideUnchangedRegions.enabled": true,
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "NugetGallery.credentialProviderFolder": "{user-profile}/.nuget/plugins/netcore/CredentialProvider.Microsoft",
+    "NugetGallery.skipRestore": "false",
+    "NugetGallery.sources": [
+        "{\"name\":\"nuget.org\",\"url\":\"https://api.nuget.org/v3/index.json\"}"
+    ],
+}
