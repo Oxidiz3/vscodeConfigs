@@ -1,0 +1,5 @@
+*.dll
+globalStorage/
+History/
+sync/
+workspaceStorage/
