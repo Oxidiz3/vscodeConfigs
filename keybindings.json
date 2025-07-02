@@ -1,0 +1,279 @@
+// Place your key bindings in this file to override the defaults
+[
+    // TODO: Old keybinds changed for the which key plugin on 4/13/25 Remove if it's 2026 and I haven't used these yet
+    // {
+    //     "command": "workbench.action.gotoSymbol",
+    //     "key": "space g m",
+    //     "when": "vim.mode = 'Normal' && editorTextFocus"
+    // },
+    // {
+    //     "command": "workbench.action.showAllEditors",
+    //     "key": "space ,",
+    //     "when": "vim.mode = 'Normal'  && (editorTextFocus || !inputFocus)"
+    // },
+    // {
+    //     "command": "editor.action.peekDefinition",
+    //     "key": "space g p",
+    //     "when": "vim.mode = 'Normal' && editorHasDefinitionProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
+    // },
+    // {
+    //     "command": "editor.action.codeAction",
+    //     "key": "space c a",
+    //     "when": "vim.mode = 'Normal' && editorTextFocus"
+    // },
+    // {
+    //     "command": "editor.action.revealDefinition",
+    //     "key": "space g d",
+    //     "when": "vim.mode = 'Normal' && editorTextFocus"
+    // },
+    // {
+    //     "command": "editor.action.goToReferences",
+    //     "key": "space g r",
+    //     "when": "vim.mode = 'Normal' && editorTextFocus"
+    // },
+    // {
+    //     "command": "editor.action.goToImplementation",
+    //     "key": "space g i",
+    //     "when": "vim.mode = 'Normal' && editorTextFocus"
+    // },
+    // {
+    //     "command": "workbench.action.closeActiveEditor",
+    //     "key": "space x x",
+    //     "when": "(vim.mode = 'Normal' && editorTextFocus) || !inputFocus"
+    // },
+    // {
+    //     "key": "space z m",
+    //     "command": "workbench.action.toggleZenMode",
+    //     "when": "vim.mode = 'Normal' && (editorTextFocus || !inputFocus)"
+    // },
+    // {
+    //     "key": "space c w",
+    //     "command": "workbench.action.closeActiveEditor",
+    //     "when": "vim.mode = 'Normal' && (editorTextFocus || !inputFocus)"
+    // },
+    // {
+    //     "args": {
+    //         "commands": [
+    //             "workbench.action.toggleSidebarVisibility",
+    //             "workbench.files.action.focusFilesExplorer"
+    //         ]
+    //     },
+    //     "command": "runCommands",
+    //     "key": "space e",
+    //     "when": "vim.mode = 'Normal' && (editorTextFocus || !inputFocus) && !sideBarFocus"
+    // },
+    // {
+    //     "args": {
+    //         "commands": [
+    //             "workbench.action.toggleSidebarVisibility",
+    //             "workbench.action.focusActiveEditorGroup"
+    //         ]
+    //     },
+    //     "command": "runCommands",
+    //     "key": "space e",
+    //     "when": "sideBarFocus && !inputFocus"
+    // },
+    // {
+    //     "command": "workbench.action.toggleSidebarVisibility",
+    //     "key": "space e",
+    //     "when": "vim.mode = 'Normal' && editorTextFocus && foldersViewVisible"
+    // },
+    // {
+    //     "command": "workbench.action.splitEditor",
+    //     "key": "space s h",
+    //     "when": "vim.mode = 'Normal' && (editorTextFocus || !inputFocus)"
+    // },
+    // {
+    //     "command": "workbench.action.splitEditorDown",
+    //     "key": "space s v",
+    //     "when": "vim.mode = 'Normal' && (editorTextFocus || !inputFocus)"
+    // },
+    //Navigation
+    {
+        "key": "ctrl-h",
+        "command": "workbench.action.navigateLeft"
+    },
+    {
+        "key": "ctrl-l",
+        "command": "workbench.action.navigateRight"
+    },
+    {
+        "key": "ctrl-k",
+        "command": "workbench.action.navigateUp"
+    },
+    {
+        "key": "ctrl-j",
+        "command": "workbench.action.navigateDown"
+    },
+    // {
+    //     "key": "alt+j",
+    //     "command": "vim.remap",
+    //     "args": "4j",
+    //     "when": "editorTextFocus && vim.mode = 'Insert'"
+    // },
+    // {
+    //     "key": "alt+k",
+    //     "command": "vim.remap",
+    //     "args": "4k",
+    //     "when": "editorTextFocus && vim.mode != 'Insert'"
+    // },
+    {
+        "key": "alt+k",
+        "command": "cursorMove",
+        "when": "editorTextFocus && vim.mode != 'Insert'",
+        "args": {
+            "to": "up",
+            "by": "line",
+            "value": 4
+        }
+    },
+    {
+        "key": "alt+j",
+        "command": "cursorMove",
+        "when": "editorTextFocus && vim.mode != 'Insert'",
+        "args": {
+            "to": "down",
+            "by": "line",
+            "value": 4
+        }
+    },
+    {
+        "command": "workbench.action.nextEditorInGroup",
+        "key": "tab",
+        "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus) && !sideBarFocus"
+    },
+    {
+        "command": "workbench.action.previousEditorInGroup",
+        "key": "shift-tab",
+        "when": "vim.mode = 'Normal' && (editorTextFocus || !inputFocus) && !sideBarFocus"
+    },
+    // Coding
+    {
+        "command": "-acceptSelectedSuggestion",
+        "key": "tab",
+        "when": "suggestWidgetVisible && textInputFocus"
+    },
+    {
+        "command": "selectPrevSuggestion",
+        "key": "ctrl+k",
+        "when": "suggestWidgetVisible"
+    },
+    {
+        "command": "workbench.action.quickOpenSelectNext",
+        "key": "ctrl+j",
+        "when": "inQuickOpen"
+    },
+    // UI
+    {
+        "command": "workbench.action.toggleAuxiliaryBar",
+        "key": "ctrl+shift+,"
+    },
+    {
+        "command": "workbench.action.toggleSidebarVisibility",
+        "key": "ctrl+shift+."
+    },
+    {
+        "command": "workbench.action.navigateBack",
+        "key": "alt+h",
+        "when": "canNavigateBack"
+    },
+    {
+        "command": "workbench.action.navigateForward",
+        "key": "alt+l",
+        "when": "canNavigateForward"
+    },
+    {
+        "key": "alt+/",
+        "command": "-metaGo.gotoSmart"
+    },
+    {
+        "key": "alt+delete",
+        "command": "-metaGo.metaJump.deleteToAfter",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+backspace",
+        "command": "-metaGo.metaJump.deleteToBefore",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+d",
+        "command": "-metaGo.metaJump.deleteToSmart",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+.",
+        "command": "-metaGo.gotoAfter"
+    },
+    {
+        "key": "alt+,",
+        "command": "-metaGo.gotoBefore"
+    },
+    {
+        "key": "ctrl+alt+.",
+        "command": "-metaGo.addCursorAfter"
+    },
+    {
+        "key": "ctrl+alt+,",
+        "command": "-metaGo.addCursorBefore"
+    },
+    {
+        "key": "ctrl+alt+/",
+        "command": "-metaGo.addCursorSmart"
+    },
+    {
+        "key": "shift+alt+.",
+        "command": "-metaGo.selectAfter",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+alt+,",
+        "command": "-metaGo.selectBefore",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+alt+/",
+        "command": "-metaGo.selectSmart",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+h",
+        "command": "-whichkey.searchBindings",
+        "when": "whichkeyVisible"
+    },
+    {
+        "key": "space",
+        "command": "whichkey.show",
+        "when": "(vim.mode == 'Normal' || vim.mode == 'Visual') && (editorTextFocus || !inputFocus)"
+    },
+    {
+        "key": "l",
+        "command": "-list.select",
+        "when": "listFocus && !inputFocus"
+    },
+    {
+        "key": "l",
+        "command": "list.expand",
+        "when": "listFocus && treeElementCanExpand && !inputFocus && !treestickyScrollFocused || listFocus && treeElementHasChild && !inputFocus && !treestickyScrollFocused"
+    },
+    {
+        "key": "right",
+        "command": "list.expand",
+        "when": "listFocus && treeElementCanExpand && !inputFocus && !treestickyScrollFocused || listFocus && treeElementHasChild && !inputFocus && !treestickyScrollFocused"
+    },
+    {
+        "key": "ctrl+f",
+        "command": "-vscode-neovim.ctrl-f",
+        "when": "editorTextFocus && neovim.ctrlKeysNormal.f && neovim.init && neovim.mode != 'insert' && editorLangId not in 'neovim.editorLangIdExclusions'"
+    },
+    {
+        "key": "ctrl+alt+j",
+        "command": "-editor.action.insertSnippet",
+        "when": "editorTextFocus && !editorReadonly && editorLangId == 'powershell'"
+    },
+    {
+        "key": "ctrl+p",
+        "command": "-extension.vim_ctrl+p",
+        "when": "editorTextFocus && vim.active && vim.use<C-p> && !inDebugRepl || vim.active && vim.use<C-p> && !inDebugRepl && vim.mode == 'CommandlineInProgress' || vim.active && vim.use<C-p> && !inDebugRepl && vim.mode == 'SearchInProgressMode'"
+    },
+]
