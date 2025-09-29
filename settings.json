@@ -411,4 +411,6 @@
     "remote.SSH.remotePlatform": {
         "littlepc.nord": "linux"
     },
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "powershell.promptToUpdatePowerShell": false,
 }
