@@ -426,4 +426,6 @@
     "NugetGallery.sources": [
         "{\"name\":\"nuget.org\",\"url\":\"https://api.nuget.org/v3/index.json\"}"
     ],
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "powershell.promptToUpdatePowerShell": false,
 }

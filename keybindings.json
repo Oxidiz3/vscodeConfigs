@@ -281,4 +281,14 @@
         "command": "whichkey.undoKey",
         "when": "whichkeyVisible"
     },
+    {
+        "key": "u",
+        "command": "undo",
+        "when": "(vim.mode == 'Normal' || vim.mode == 'Visual') && (editorTextFocus || !inputFocus)"
+    },
+    {
+        "key": "ctrl+r",
+        "command": "redo",
+        "when": "(vim.mode == 'Normal' || vim.mode == 'Visual') && (editorTextFocus || !inputFocus)"
+    },
 ]
