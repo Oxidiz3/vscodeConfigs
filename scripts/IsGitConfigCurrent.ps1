@@ -1,4 +1,4 @@
-git fetch origin 2>$null
+git fetch origin main2>$null
 $behind, $ahead = (git rev-list --left-right --count origin/main...HEAD).Split()
 
 if ($behind -gt 0) {
