@@ -1,93 +1,5 @@
 // Place your key bindings in this file to override the defaults
 [
-    // TODO: Old keybinds changed for the which key plugin on 4/13/25 Remove if it's 2026 and I haven't used these yet
-    // {
-    //     "command": "workbench.action.gotoSymbol",
-    //     "key": "space g m",
-    //     "when": "vim.mode = 'Normal' && editorTextFocus"
-    // },
-    // {
-    //     "command": "workbench.action.showAllEditors",
-    //     "key": "space ,",
-    //     "when": "vim.mode = 'Normal'  && (editorTextFocus || !inputFocus)"
-    // },
-    // {
-    //     "command": "editor.action.peekDefinition",
-    //     "key": "space g p",
-    //     "when": "vim.mode = 'Normal' && editorHasDefinitionProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
-    // },
-    // {
-    //     "command": "editor.action.codeAction",
-    //     "key": "space c a",
-    //     "when": "vim.mode = 'Normal' && editorTextFocus"
-    // },
-    // {
-    //     "command": "editor.action.revealDefinition",
-    //     "key": "space g d",
-    //     "when": "vim.mode = 'Normal' && editorTextFocus"
-    // },
-    // {
-    //     "command": "editor.action.goToReferences",
-    //     "key": "space g r",
-    //     "when": "vim.mode = 'Normal' && editorTextFocus"
-    // },
-    // {
-    //     "command": "editor.action.goToImplementation",
-    //     "key": "space g i",
-    //     "when": "vim.mode = 'Normal' && editorTextFocus"
-    // },
-    // {
-    //     "command": "workbench.action.closeActiveEditor",
-    //     "key": "space x x",
-    //     "when": "(vim.mode = 'Normal' && editorTextFocus) || !inputFocus"
-    // },
-    // {
-    //     "key": "space z m",
-    //     "command": "workbench.action.toggleZenMode",
-    //     "when": "vim.mode = 'Normal' && (editorTextFocus || !inputFocus)"
-    // },
-    // {
-    //     "key": "space c w",
-    //     "command": "workbench.action.closeActiveEditor",
-    //     "when": "vim.mode = 'Normal' && (editorTextFocus || !inputFocus)"
-    // },
-    // {
-    //     "args": {
-    //         "commands": [
-    //             "workbench.action.toggleSidebarVisibility",
-    //             "workbench.files.action.focusFilesExplorer"
-    //         ]
-    //     },
-    //     "command": "runCommands",
-    //     "key": "space e",
-    //     "when": "vim.mode = 'Normal' && (editorTextFocus || !inputFocus) && !sideBarFocus"
-    // },
-    // {
-    //     "args": {
-    //         "commands": [
-    //             "workbench.action.toggleSidebarVisibility",
-    //             "workbench.action.focusActiveEditorGroup"
-    //         ]
-    //     },
-    //     "command": "runCommands",
-    //     "key": "space e",
-    //     "when": "sideBarFocus && !inputFocus"
-    // },
-    // {
-    //     "command": "workbench.action.toggleSidebarVisibility",
-    //     "key": "space e",
-    //     "when": "vim.mode = 'Normal' && editorTextFocus && foldersViewVisible"
-    // },
-    // {
-    //     "command": "workbench.action.splitEditor",
-    //     "key": "space s h",
-    //     "when": "vim.mode = 'Normal' && (editorTextFocus || !inputFocus)"
-    // },
-    // {
-    //     "command": "workbench.action.splitEditorDown",
-    //     "key": "space s v",
-    //     "when": "vim.mode = 'Normal' && (editorTextFocus || !inputFocus)"
-    // },
     //Navigation
     {
         "key": "ctrl-h",
@@ -105,18 +17,6 @@
         "key": "ctrl-j",
         "command": "workbench.action.navigateDown"
     },
-    // {
-    //     "key": "alt+j",
-    //     "command": "vim.remap",
-    //     "args": "4j",
-    //     "when": "editorTextFocus && vim.mode = 'Insert'"
-    // },
-    // {
-    //     "key": "alt+k",
-    //     "command": "vim.remap",
-    //     "args": "4k",
-    //     "when": "editorTextFocus && vim.mode != 'Insert'"
-    // },
     {
         "key": "alt+k",
         "command": "cursorMove",

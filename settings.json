@@ -43,32 +43,6 @@
             ]
         }
     ],
-    "vim.statusBarColors.normal": [
-        "#FBE569",
-        "#000"
-    ],
-    "vim.statusBarColors.insert": [
-        "#BF616A",
-        "#000"
-    ],
-    "vim.statusBarColors.visual": [
-        "#B48EAD",
-        "#000"
-    ],
-    "vim.statusBarColors.visualline": [
-        "#B48EAD",
-        "#000"
-    ],
-    "vim.statusBarColors.visualblock": [
-        "#A3BE8C",
-        "#000"
-    ],
-    "vim.statusBarColors.replace": "#D08770",
-    "vim.statusBarColors.commandlineinprogress": "#007ACC",
-    "vim.statusBarColors.searchinprogressmode": "#007ACC",
-    "vim.statusBarColors.easymotionmode": "#007ACC",
-    "vim.statusBarColors.easymotioninputmode": "#007ACC",
-    "vim.statusBarColors.surroundinputmode": "#007ACC",
     "vim.commandLineModeKeyBindings": [],
     "editor.stickyTabStops": true,
     "python.languageServer": "Jedi",
@@ -453,4 +427,15 @@
     "github.copilot.nextEditSuggestions.enabled": true,
     "powershell.promptToUpdatePowerShell": false,
     "chat.mcp.gallery.enabled": true,
+    "vim.inccommand": "append",
+    "vim.smartRelativeLine": true,
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
+    },
+    "remote.SSH.remotePlatform": {
+        "littlepc.nord": "linux"
+    },
 }

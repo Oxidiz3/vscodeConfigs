@@ -1,3 +1,5 @@
 workspaceStorage/
 globalStorage/
 History/
+*.dll
+sync/
