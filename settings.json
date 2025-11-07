@@ -441,7 +441,7 @@
     "startupScripts.commands": [
         {
             "label": "config repo",
-            "command": "cd ~/AppData/Roaming/Code/User/; C:~/AppData/Roaming/Code/User/scripts/IsGitConfigCurrent.ps1"
+            "command": "cd ~/AppData/Roaming/Code/User/; ~/AppData/Roaming/Code/User/scripts/IsGitConfigCurrent.ps1"
         },
     ]
 }
