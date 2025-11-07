@@ -81,7 +81,6 @@
     "prettier.semi": false,
     "prettier.useTabs": true,
     "editor.formatOnSaveMode": "modificationsIfAvailable",
-    "files.autoSave": "onFocusChange",
     "omnisharp.useModernNet": false,
     "editor.guides.bracketPairs": true,
     "[dart][python]": {
@@ -261,6 +260,31 @@
                     "command": "editor.action.revealDefinition",
                 },
                 {
+                    "name": "Search",
+                    "key": "s",
+                    "args": {
+                        "commands": [
+                            "editor.action.addSelectionToNextFindMatch",
+                            "editor.action.clipboardCopyAction",
+                            "workbench.action.findInFiles"
+                        ]
+                    },
+                    "command": "runCommands",
+                },
+                {
+                    "name": "File (ctrl+p)",
+                    "key": "f",
+                    "args": {
+                        "commands": [
+                            "editor.action.addSelectionToNextFindMatch",
+                            "editor.action.clipboardCopyAction",
+                            "workbench.action.quickOpen"
+                            // Have to press ctrl+v after command to paste your search
+                        ]
+                    },
+                    "command": "runCommands",
+                },
+                {
                     "key": "r",
                     "name": "References",
                     "command": "editor.action.goToReferences",
@@ -400,6 +424,9 @@
     "NugetGallery.sources": [
         "{\"name\":\"nuget.org\",\"url\":\"https://api.nuget.org/v3/index.json\"}"
     ],
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "powershell.promptToUpdatePowerShell": false,
+    "chat.mcp.gallery.enabled": true,
     "vim.inccommand": "append",
     "vim.smartRelativeLine": true,
     "github.copilot.enable": {
@@ -411,6 +438,4 @@
     "remote.SSH.remotePlatform": {
         "littlepc.nord": "linux"
     },
-    "github.copilot.nextEditSuggestions.enabled": true,
-    "powershell.promptToUpdatePowerShell": false,
 }
