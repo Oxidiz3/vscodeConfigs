@@ -53,9 +53,9 @@
     "vim.cursorStylePerMode.insert": "line",
     "vim.cursorStylePerMode.normal": "block",
     "vim.cursorStylePerMode.replace": "block-outline",
-    "vim.cursorStylePerMode.visual": "block-outline",
-    "vim.cursorStylePerMode.visualblock": "block-outline",
-    "vim.cursorStylePerMode.visualline": "block-outline",
+    "vim.cursorStylePerMode.visual": "underline",
+    "vim.cursorStylePerMode.visualblock": "underline",
+    "vim.cursorStylePerMode.visualline": "underline",
     "vim.foldfix": true,
     "vim.highlightedyank.enable": true,
     "vim.useSystemClipboard": true,
@@ -87,7 +87,6 @@
         "editor.wordBasedSuggestions": "off"
     },
     "terminal.integrated.enableMultiLinePasteWarning": "never",
-    "editor.formatOnSave": true,
     "editor.formatOnPaste": true,
     "python.defaultInterpreterPath": "C:\\Users\\mecha\\AppData\\Local\\Microsoft\\WindowsApps\\python3.12.exe",
     "extensions.experimental.affinity": {
@@ -102,7 +101,6 @@
     "security.workspace.trust.enabled": false,
     "dotnet.codeLens.enableReferencesCodeLens": false,
     "editor.cursorSurroundingLines": 20,
-    "editor.lineNumbers": "relative",
     "metaGo.decoration.additionalSingleCharCodeCharacters": "z",
     "metaGo.decoration.characters": "k, j, d, f, l, s, a, h, g, i, o, n, u, r, v, c, w, e, x, m, b, p, q, t, y",
     "workbench.layoutControl.enabled": false,
@@ -302,6 +300,18 @@
             ],
         },
         {
+            "key": "x",
+            "name": "Document",
+            "type": "bindings",
+            "bindings": [
+                {
+                    "key": "f",
+                    "name": "Format Document",
+                    "command": "editor.action.formatDocument",
+                },
+            ],
+        },
+        {
             "key": "d",
             "name": "Debug",
             "type": "bindings",
@@ -323,6 +333,18 @@
                 },
             ],
         },
+        // {
+        //     "key": "m",
+        //     "name": "Move",
+        //     "type": "bindings",
+        //     "bindings": [
+        //         {
+        //             "key": "h",
+        //             "name": "<- Move to window left",
+        //             "command": "editor.debug.action.toggleBreakpoint",
+        //         },
+        //     ],
+        // },
         {
             "key": "o",
             "name": "Open",
@@ -384,6 +406,28 @@
                 },
             ],
         },
+        {
+            "key": "c",
+            "name": "Copilot",
+            "type": "bindings",
+            "bindings": [
+                {
+                    "key": "e",
+                    "name": "Explain",
+                    "command": "github.copilot.chat.explain",
+                },
+                {
+                    "key": "i",
+                    "name": "Inline Chat",
+                    "command": "inlineChat.start",
+                },
+                {
+                    "key": "c",
+                    "name": "Chat",
+                    "command": "workbench.action.chat.open",
+                },
+            ],
+        },
     ],
     // Use this to work with vim extensions https://github.com/VSCodeVim/Vim?tab=readme-ov-file#vim-easymotion
     "vim.normalModeKeyBindingsNonRecursive": [
@@ -427,10 +471,8 @@
     "github.copilot.nextEditSuggestions.enabled": true,
     "powershell.promptToUpdatePowerShell": false,
     "chat.mcp.gallery.enabled": true,
-    "vim.inccommand": "append",
-    "vim.smartRelativeLine": true,
     "github.copilot.enable": {
-        "*": false,
+        "*": true,
         "plaintext": false,
         "markdown": false,
         "scminput": false
@@ -443,5 +485,23 @@
             "label": "config repo",
             "command": "cd ~/AppData/Roaming/Code/User/; ~/AppData/Roaming/Code/User/scripts/IsGitConfigCurrent.ps1"
         },
-    ]
+    ],
+    "cSpell.userWords": [
+        "Melaleuca"
+    ],
+    "runTerminalCommand.commands": [
+        {
+            "command": "CreateJsonFilesForHbsScripts.ps1",
+            "auto": true,
+            "group": "FE Team"
+        },
+        {
+            "command": "PrepareRte.ps1",
+            "auto": true,
+            "group": "FE Team"
+        },
+    ],
+    "[vue]": {
+        "editor.defaultFormatter": "Vue.volar"
+    }
 }
