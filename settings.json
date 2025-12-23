@@ -458,7 +458,7 @@
     "csharp.debug.logging.moduleLoad": false,
     "csharp.debug.logging.elapsedTiming": true,
     "csharp.debug.debugConsoleVerbosity": "verbose",
-    "diffEditor.ignoreTrimWhitespace": true,
+    "diffEditor.ignoreTrimWhitespace": false,
     "diffEditor.hideUnchangedRegions.enabled": true,
     "[jsonc]": {
         "editor.defaultFormatter": "vscode.json-language-features"
@@ -487,7 +487,8 @@
         },
     ],
     "cSpell.userWords": [
-        "Melaleuca"
+        "Melaleuca",
+        "vnode"
     ],
     "runTerminalCommand.commands": [
         {
@@ -503,5 +504,6 @@
     ],
     "[vue]": {
         "editor.defaultFormatter": "Vue.volar"
-    }
+    },
+    "editor.stickyScroll.maxLineCount": 10
 }
