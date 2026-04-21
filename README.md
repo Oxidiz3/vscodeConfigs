@@ -12,6 +12,9 @@ Anytime there is an update that you want to pull or push you need to create a br
 
 - `git checkout -b mm_dd_yyyy`
 
+commit
+- `git commit -m "{CHANGE}"`
+
 then push 
 - `git push -u origin mm_dd_yyyy`
 
