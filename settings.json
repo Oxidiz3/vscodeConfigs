@@ -1,7 +1,6 @@
 {
     "editor.renderWhitespace": "none",
     "explorer.confirmDragAndDrop": false,
-    "editor.minimap.enabled": false,
     "editor.suggestSelection": "first",
     "files.associations": {
         "*.xml": "xml"
@@ -230,11 +229,6 @@
                     "name": "Close Window",
                     "command": "workbench.action.closeActiveEditor",
                 },
-                {
-                    "key": ",",
-                    "name": "Show All Editors",
-                    "command": "workbench.action.showAllEditors",
-                },
             ],
         },
         {
@@ -297,6 +291,11 @@
                     "name": "Error",
                     "command": "editor.action.marker.next",
                 },
+                {
+                    "key": ",",
+                    "name": "Show All Editors",
+                    "command": "workbench.action.showAllEditors",
+                },
             ],
         },
         {
@@ -308,6 +307,11 @@
                     "key": "f",
                     "name": "Format Document",
                     "command": "editor.action.formatDocument",
+                },
+                {
+                    "key": "b",
+                    "name": "Git Blame",
+                    "command": "gitlens.toggleFileBlame:key",
                 },
             ],
         },
@@ -452,14 +456,13 @@
         }
     ],
     "vim.showMarksInGutter": true,
-    "workbench.iconTheme": "material-icon-theme",
+    "workbench.iconTheme": "gruvbox-material-icon-theme",
     "vim.easymotion": true,
     "csharp.debug.logging.diagnosticsLog.startDebuggingTracing": true,
     "csharp.debug.logging.moduleLoad": false,
     "csharp.debug.logging.elapsedTiming": true,
     "csharp.debug.debugConsoleVerbosity": "verbose",
     "diffEditor.ignoreTrimWhitespace": false,
-    "diffEditor.hideUnchangedRegions.enabled": true,
     "[jsonc]": {
         "editor.defaultFormatter": "vscode.json-language-features"
     },
@@ -505,5 +508,12 @@
     "[vue]": {
         "editor.defaultFormatter": "Vue.volar"
     },
-    "editor.stickyScroll.maxLineCount": 10
+    "editor.stickyScroll.maxLineCount": 10,
+    "diffEditor.renderSideBySide": false,
+    "vim.smartRelativeLine": true,
+    "chat.viewSessions.orientation": "stacked",
+    "gitlens.ai.model": "vscode",
+    "gitlens.ai.vscode.model": "copilot:gpt-4.1",
+    "workbench.editor.enablePreview": false,
+    "git.blame.editorDecoration.enabled": true
 }
