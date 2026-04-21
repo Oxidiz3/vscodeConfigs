@@ -141,11 +141,11 @@
         "command": "-whichkey.searchBindings",
         "when": "whichkeyVisible"
     },
-    {
-        "key": "space",
-        "command": "whichkey.show",
-        "when": "(vim.mode == 'Normal' || vim.mode == 'Visual') && (editorTextFocus || !inputFocus)"
-    },
+    // {
+    //     "key": "space",
+    //     "command": "whichkey.show",
+    //     "when": "(vim.mode == 'Normal' || vim.mode == 'Visual') && (editorTextFocus || !inputFocus) && !terminalFocus"
+    // },
     {
         "key": "l",
         "command": "-list.select",
@@ -181,14 +181,14 @@
         "command": "whichkey.undoKey",
         "when": "whichkeyVisible"
     },
-    {
-        "key": "u",
-        "command": "undo",
-        "when": "(vim.mode == 'Normal' || vim.mode == 'Visual') && (editorTextFocus || !inputFocus)"
-    },
-    {
-        "key": "ctrl+r",
-        "command": "redo",
-        "when": "(vim.mode == 'Normal' || vim.mode == 'Visual') && (editorTextFocus || !inputFocus)"
-    },
+    // {
+    //     "key": "u",
+    //     "command": "undo",
+    //     "when": "(vim.mode == 'Normal' || vim.mode == 'Visual') && (editorTextFocus || !inputFocus)"
+    // },
+    // {
+    //     "key": "ctrl+r",
+    //     "command": "redo",
+    //     "when": "(vim.mode == 'Normal' || vim.mode == 'Visual') && (editorTextFocus || !inputFocus)"
+    // },
 ]
