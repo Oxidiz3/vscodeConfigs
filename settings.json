@@ -109,12 +109,12 @@
     "whichkey.bindings": [
         {
             "key": "e",
-            "name": "Editor",
+            "name": "[E]ditor",
             "type": "bindings",
             "bindings": [
                 {
                     "key": "f",
-                    "name": "File Explorer",
+                    "name": "[E]ditor [F]ile Explorer",
                     "args": {
                         "commands": [
                             "workbench.files.action.focusFilesExplorer"
@@ -124,7 +124,7 @@
                 },
                 {
                     "key": "g",
-                    "name": "git tab",
+                    "name": "[E]ditor [G]it Tab",
                     "args": {
                         "commands": [
                             "workbench.view.scm"
@@ -134,7 +134,7 @@
                 },
                 {
                     "key": "c",
-                    "name": "copilot",
+                    "name": "[E]ditor [C]opilot",
                     "args": {
                         "commands": [
                             "workbench.action.chat.open"
@@ -144,7 +144,7 @@
                 },
                 {
                     "key": "d",
-                    "name": "debug",
+                    "name": "[E]ditor [D]ebug",
                     "args": {
                         "commands": [
                             "workbench.view.debug"
@@ -154,7 +154,7 @@
                 },
                 {
                     "key": "t",
-                    "name": "Terminal",
+                    "name": "[E]ditor [T]erminal",
                     "args": {
                         "commands": [
                             "workbench.action.terminal.toggleTerminal"
@@ -164,7 +164,7 @@
                 },
                 {
                     "key": "p",
-                    "name": "Command Palette",
+                    "name": "[E]ditor Command [P]alette",
                     "args": {
                         "commands": [
                             "workbench.action.showCommands"
@@ -174,7 +174,7 @@
                 },
                 {
                     "key": "s",
-                    "name": "Settings",
+                    "name": "[E]ditor [S]ettings",
                     "args": {
                         "commands": [
                             "workbench.action.openSettings"
@@ -184,7 +184,7 @@
                 },
                 {
                     "key": "l",
-                    "name": "Extensions",
+                    "name": "[E]ditor Extensions [L]",
                     "args": {
                         "commands": [
                             "workbench.view.extensions"
@@ -196,63 +196,63 @@
         },
         {
             "key": "w",
-            "name": "window",
+            "name": "[W]indow",
             "type": "bindings",
             "bindings": [
                 {
                     "key": "h",
-                    "name": "Split Horizontally",
+                    "name": "[W]indow Split [H]orizontally",
                     "command": "workbench.action.splitEditor",
                 },
                 {
                     "key": "v",
-                    "name": "Split Vertically",
+                    "name": "[W]indow Split [V]ertically",
                     "command": "workbench.action.splitEditorDown",
                 },
                 {
                     "key": "z",
-                    "name": "Zen Mode",
+                    "name": "[W]indow [Z]en Mode",
                     "command": "workbench.action.toggleZenMode",
                 },
                 {
                     "key": "p",
-                    "name": "toggle pin",
+                    "name": "[W]indow Toggle [P]in",
                     "command": "workbench.action.pinEditor",
                 },
                 {
                     "key": "u",
-                    "name": "UnPin Editor",
+                    "name": "[W]indow [U]nPin Editor",
                     "command": "workbench.action.unpinEditor",
                 },
                 {
                     "key": "c",
-                    "name": "Close Window",
+                    "name": "[W]indow [C]lose Window",
                     "command": "workbench.action.closeActiveEditor",
                 },
             ],
         },
         {
             "key": "g",
-            "name": "Goto",
+            "name": "[G]oto",
             "type": "bindings",
             "bindings": [
                 {
                     "key": "p",
-                    "name": "Peek",
+                    "name": "[G]oto [P]eek",
                     "command": "editor.action.peekDefinition",
                 },
                 {
                     "key": "m",
-                    "name": "Symbol",
+                    "name": "[G]oto Sy[m]bol",
                     "command": "workbench.action.gotoSymbol",
                 },
                 {
-                    "name": "Definition",
+                    "name": "[G]oto [D]efinition",
                     "key": "d",
                     "command": "editor.action.revealDefinition",
                 },
                 {
-                    "name": "Search",
+                    "name": "[G]oto [S]earch",
                     "key": "s",
                     "args": {
                         "commands": [
@@ -264,7 +264,7 @@
                     "command": "runCommands",
                 },
                 {
-                    "name": "File (ctrl+p)",
+                    "name": "[G]oto [F]ile (ctrl+p)",
                     "key": "f",
                     "args": {
                         "commands": [
@@ -278,61 +278,61 @@
                 },
                 {
                     "key": "r",
-                    "name": "References",
+                    "name": "[G]oto [R]eferences",
                     "command": "editor.action.goToReferences",
                 },
                 {
                     "key": "i",
-                    "name": "Implementation",
+                    "name": "[G]oto [I]mplementation",
                     "command": "editor.action.goToImplementation",
                 },
                 {
                     "key": "e",
-                    "name": "Error",
+                    "name": "[G]oto [E]rror",
                     "command": "editor.action.marker.next",
                 },
                 {
                     "key": ",",
-                    "name": "Show All Editors",
+                    "name": "[G]oto Show All Editors [,]",
                     "command": "workbench.action.showAllEditors",
                 },
             ],
         },
         {
             "key": "x",
-            "name": "Document",
+            "name": "[X] Document",
             "type": "bindings",
             "bindings": [
                 {
                     "key": "f",
-                    "name": "Format Document",
+                    "name": "[X] Document [F]ormat Document",
                     "command": "editor.action.formatDocument",
                 },
                 {
                     "key": "b",
-                    "name": "Git Blame",
+                    "name": "[X] Document Git [B]lame",
                     "command": "gitlens.toggleFileBlame:key",
                 },
             ],
         },
         {
             "key": "d",
-            "name": "Debug",
+            "name": "[D]ebug",
             "type": "bindings",
             "bindings": [
                 {
                     "key": "b",
-                    "name": "Toggle Breakpoint",
+                    "name": "[D]ebug Toggle [B]reakpoint",
                     "command": "editor.debug.action.toggleBreakpoint",
                 },
                 {
                     "key": "s",
-                    "name": "Start Debugging",
+                    "name": "[D]ebug [S]tart Debugging",
                     "command": "workbench.action.debug.start",
                 },
                 {
                     "key": "q",
-                    "name": "Quit Debugging",
+                    "name": "[D]ebug [Q]uit Debugging",
                     "command": "workbench.action.debug.stop",
                 },
             ],
@@ -351,85 +351,105 @@
         // },
         {
             "key": "o",
-            "name": "Open",
+            "name": "[O]pen",
             "type": "bindings",
             "bindings": [
                 {
                     "key": "s",
-                    "name": "Solution",
+                    "name": "[O]pen [S]olution",
                     "command": "csdevkit.openSolution",
                 },
                 {
                     "key": "p",
-                    "name": "Project folder",
+                    "name": "[O]pen [P]roject Folder",
                     "command": "workbench.action.files.openFolder",
                 },
                 {
                     "key": "f",
-                    "name": "File",
+                    "name": "[O]pen [F]ile",
                     "command": "workbench.action.files.openFile",
                 },
             ],
         },
         {
             "key": "s",
-            "name": "Split",
+            "name": "[S]plit",
             "type": "bindings",
             "bindings": [
                 {
                     "key": "h",
-                    "name": "Horizontally",
+                    "name": "[S]plit [H]orizontally",
                     "command": "workbench.action.splitEditorRight",
                 },
                 {
                     "key": "v",
-                    "name": "Vertically",
+                    "name": "[S]plit [V]ertically",
                     "command": "workbench.action.splitEditorDown",
                 },
             ],
         },
         {
             "key": "t",
-            "name": "Tabs",
+            "name": "[T]abs",
             "type": "bindings",
             "bindings": [
                 {
                     "key": "c",
-                    "name": "Close",
+                    "name": "[T]abs [C]lose",
                     "command": "workbench.action.closeActiveEditor",
                 },
                 {
                     "key": "p",
-                    "name": "Pin",
+                    "name": "[T]abs [P]in",
                     "command": "workbench.action.pinEditor",
                 },
                 {
                     "key": "u",
-                    "name": "UnPin",
+                    "name": "[T]abs [U]nPin",
                     "command": "workbench.action.unpinEditor",
                 },
             ],
         },
         {
             "key": "c",
-            "name": "Copilot",
+            "name": "[C]",
             "type": "bindings",
             "bindings": [
                 {
                     "key": "e",
-                    "name": "Explain",
+                    "name": "[C]oPilot [E]xplain",
                     "command": "github.copilot.chat.explain",
                 },
                 {
                     "key": "i",
-                    "name": "Inline Chat",
+                    "name": "[C]oPilot [I]nline Chat",
                     "command": "inlineChat.start",
                 },
                 {
                     "key": "c",
-                    "name": "Chat",
+                    "name": "[C]oPilot [C]hat",
                     "command": "workbench.action.chat.open",
                 },
+                {
+                    "key": "p",
+                    "name": "[C]opy File [P]ath",
+                    "command": "copyFilePath",
+                },
+                {
+                    "key": "s",
+                    "name": "[C]ode [S]uggestion",
+                    "command": "editor.action.triggerSuggest",
+                },
+                {
+                    "key": "r",
+                    "name": "[C]ode [r]efactor",
+                    "command": "editor.action.refactor",
+                },
+                {
+                    "key": "h",
+                    "name": "[C]ode [H]over",
+                    "command": "editor.action.showDefinitionPreviewHover",
+                }
             ],
         },
     ],
@@ -462,7 +482,7 @@
     "csharp.debug.logging.moduleLoad": false,
     "csharp.debug.logging.elapsedTiming": true,
     "csharp.debug.debugConsoleVerbosity": "verbose",
-    "diffEditor.ignoreTrimWhitespace": false,
+    "diffEditor.ignoreTrimWhitespace": true,
     "[jsonc]": {
         "editor.defaultFormatter": "vscode.json-language-features"
     },
@@ -490,8 +510,12 @@
         },
     ],
     "cSpell.userWords": [
+        "LASTEXITCODE",
         "Melaleuca",
-        "vnode"
+        "toplevel",
+        "vnode",
+        "worktree",
+        "worktrees"
     ],
     "runTerminalCommand.commands": [
         {
@@ -515,5 +539,9 @@
     "gitlens.ai.model": "vscode",
     "gitlens.ai.vscode.model": "copilot:gpt-4.1",
     "workbench.editor.enablePreview": false,
-    "git.blame.editorDecoration.enabled": true
+    "git.blame.editorDecoration.enabled": true,
+    "chat.permissions.default": "autoApprove",
+    "chatgpt.followUpQueueMode": "steer",
+    "aws.cloudformation.telemetry.enabled": false,
+    "window.title": "${dirty}${rootNameShort}",
 }
